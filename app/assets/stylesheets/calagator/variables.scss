@@ -1,5 +1,5 @@
 //color definitions
-$white: #ffffff;
+$white: #ddddff;
 $teal: #66baa9;
 $green: #82C555;
 $dk_green: #445544;
@@ -8,12 +8,20 @@ $lt_blue: #e8fbfe;
 $wifi_blue: #6098e6;
 $red: #CE421D;
 
+$dk_blue: #0b1c6c;
+$med_blue: #1f2486;
+$marine: #0d5d68;
+$dk_orange: #af651f;
+$orange: #f38014;
+
+$footer: $dk_blue;
+
 $box_background: $lt_blue;
 $closed: $red;
-$default_text: $beige;
-$footer: $dk_green;
-$header: $green;
-$header_text: $dk_green;
+$default_text: $white;
+// $footer: $dk_green;
+$header: $dk_blue;
+$header_text: $orange;
 $subnav: saturate(lighten($header, 20%), 25%);
 $wifi: $wifi_blue;
 

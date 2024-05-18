@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Sanchez);
-
 body {
   background: #BEF598;
   color: #445545;
@@ -9,7 +7,7 @@ body {
   margin: 2em 0;
 }
 h1, h2 { 
-  font-family: Sanchez;
+  font-family: Georgia;
   line-height: 1.1;
 }
 h1 { 

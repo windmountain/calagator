@@ -8,12 +8,16 @@ $lt_blue: #e8fbfe;
 $wifi_blue: #6098e6;
 $red: #CE421D;
 
+$offwhite: #eeeeee;
+$dk_blue: #0b1c6c;
+$blue: #1f2486;
+
 $box_background: $lt_blue;
 $closed: $red;
-$default_text: $beige;
-$footer: $dk_green;
-$header: $green;
-$header_text: $dk_green;
+$default_text: $offwhite;
+$footer: $dk_blue;
+$header: $blue;
+$header_text: $offwhite;
 $subnav: saturate(lighten($header, 20%), 25%);
 $wifi: $wifi_blue;
 

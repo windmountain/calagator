@@ -7,6 +7,10 @@ body {
   background: #fff;
 }
 
+body #global_header {
+  color: #fff;
+}
+
 #global_header {
   background: $header;
   position: relative;
@@ -34,7 +38,6 @@ body {
   left: 40px;
   position: absolute;
   top: 25px;
-  width: 135px;
 }
 
 #app_menu ul {

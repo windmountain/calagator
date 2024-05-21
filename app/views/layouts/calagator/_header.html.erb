@@ -1,5 +1,7 @@
       <div id="global_header">
-        <%= link_to Calagator.title, root_path, id: "project_title" %>
+        <%= link_to root_path do %>
+          <h1><span><small>NYC</small></span><span>Maritime Calendar</span></h1>
+        <% end %>
 
         <div id="top_menu">
           <div id='app_menu'>
@@ -8,7 +10,14 @@
                 <li class='<%=link_class[:venues]%>'><%= link_to "Venues", venues_path %></li>
             </ul>
           </div>
-          <%= render partial: 'layouts/calagator/global_search' %>
+          <%= form_tag search_events_path, :method => :get do %>
+            <label for="search_field">Search Events</label>
+            <% if request.env["HTTP_USER_AGENT"] && request.env["HTTP_USER_AGENT"].include?("Safari") %>
+              <input type="search" name="query" value="<%= @query %>" results="5" id="search_field">
+            <% else %>
+              <%= text_field_tag 'query', @query, id: 'search_field', tabindex: 1 %>
+            <% end %>
+          <% end -%>
         </div>
       </div>
 

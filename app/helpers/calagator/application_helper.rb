@@ -66,9 +66,9 @@ module Calagator
     end
 
     def subnav_class_for(controller_name, action_name)
-      css_class = "#{controller.controller_name}_#{controller.action_name}_subnav"
+      css_class = "maritime_subnav maritime_#{controller.controller_name}_#{controller.action_name}_subnav"
       if [controller.controller_name, controller.action_name] == [controller_name, action_name]
-        css_class += " active"
+        css_class += " maritime_active"
       end
       css_class
     end
